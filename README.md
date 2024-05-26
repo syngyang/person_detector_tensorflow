@@ -1,3 +1,10 @@
+npx create-next-app@latest
+npm i react-webcam
+npm i @tensorflow-models/coco-ssd @tensorflow/tfjs
+ ( from : https://github.com/tensorflow/tfjs-models/tree/master/coco-ssd )
+- 첫번째: load모델( as cocoSSDLoad ) 을 import 함 ( async 처리 )
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
