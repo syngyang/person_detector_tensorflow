@@ -1,14 +1,14 @@
 ### 설치
-npx create-next-app@latest
-npm i react-webcam
-npm i @tensorflow-models/coco-ssd @tensorflow/tfjs
- ( from : https://github.com/tensorflow/tfjs-models/tree/master/coco-ssd )
-- 첫번째: load모델( as cocoSSDLoad ) 을 import 함 ( async 처리 )
+* npx create-next-app@latest
+* npm i react-webcam
+* npm i @tensorflow-models/coco-ssd @tensorflow/tfjs
+* ( from : https://github.com/tensorflow/tfjs-models/tree/master/coco-ssd )
+* 첫번째: load모델( as cocoSSDLoad ) 을 import 함 ( async 처리 )
 
 ### 주요 페이지
-app>page.js
-app>components>ObjectDetecttion
-app>util>renderPredictions
+* app>page.js
+* app>components>ObjectDetecttion
+* app>util>renderPredictions
 
 
 ## 시작하기
