@@ -1,14 +1,17 @@
+### 설치
 npx create-next-app@latest
 npm i react-webcam
 npm i @tensorflow-models/coco-ssd @tensorflow/tfjs
  ( from : https://github.com/tensorflow/tfjs-models/tree/master/coco-ssd )
 - 첫번째: load모델( as cocoSSDLoad ) 을 import 함 ( async 처리 )
 
+### 주요 페이지
+app>page.js
+app>components>ObjectDetecttion
+app>util>renderPredictions
 
 
-## Getting Started
-
-First, run the development server:
+## 시작하기
 
 ```bash
 npm run dev
@@ -24,8 +27,3 @@ bun dev
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

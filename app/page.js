@@ -1,5 +1,4 @@
 import ObjectDetection from "@/components/ObjectDetection";
-import Image from "next/image";
 
 export default function Home() {
   return (

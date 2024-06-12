@@ -21,7 +21,7 @@ const ObjectDetection = () => {
       runObjectDetection(net);
     }, 10);
   };
-  async function runObjectDetection(params) {
+  async function runObjectDetection(net) {
     if (
       canvasRef.current &&
       webcamRef.current !== null &&
@@ -30,7 +30,7 @@ const ObjectDetection = () => {
       canvasRef.current.width = webcamRef.current.video.videoWidth;
       canvasRef.current.height = webcamRef.current.video.videoHeight;
       // 감지된 오브젝트 찾기 - 3가지(img, maxNumBoxes, minScore)
-      const detectedObjects = await params.detect(webcamRef.current.video, undefined, 0.6);
+      const detectedObjects = await net.detect(webcamRef.current.video, undefined, 0.6);
     //   console.log('detectedObjects: ', detectedObjects);
     const context = canvasRef.current.getContext("2d")
     renderPredictions(detectedObjects, context);
